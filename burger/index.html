@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Foody</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="closeI" id="csidebarIcon">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="profile">
+                <img src="img/pf.jpg">
+                <div class="greet">
+                    <h1>Hello,</h1>
+                    <span class="name">Ethan</span>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-home"></i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-cart-arrow-down"></i>
+                            <p>My Cart</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-list"></i>
+                            <p>Order History</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-history"></i>
+                            <p>History</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-book"></i>
+                            <p>Settings</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-door-open"></i>
+                            <p>Logout</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="hcont">
+            <div class="home" id="home">
+            <header>
+                <img src="img/menu2.png" width="20px" height="20px" id="osidebarIcon">
+                <!-- <h2>Foody</h2> -->
+                <i class="fa fa-moon"></i>
+            </header>
+            
+            <div class="info">
+              <div class="greet">
+                <h1>Hey there <span class="name">Ethan</span></h1>
+             </div>
+            
+            <div class="addinfo">
+                <h1>Grab your</h1>
+                <span class="del">delicious meal!</span>
+            </div>
+            
+            <div class="searchfield">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                <input type="text" id="" placeholder="Search here">
+                </div>
+                <i class="fa fa-filter filter"></i>
+            </div>
+            
+            <div class="categories">
+                <div class="cat-top">
+                    <h1>Explore Categories <span></span></h1>
+                    <span>
+                        <a href="">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            
+            </div>
+            
+            <div class="cat-food">
+                <div class="row-food">
+                    <!-- food1 -->
+                    <div class="rfood">
+                        <div class="image">
+                            <img src="img/veggies.jpg">
+                            </div>
+                        <p>Snacks</p>
+                    </div>
+                    
+                    <!-- food2 -->
+                    <div class="rfood">
+                        <div class="image">
+                            <img src="img/protein.jpg">
+                            </div>
+                        <p>Protein</p>
+                    </div>
+                    
+                    <!-- food3 -->
+                    <div class="rfood">
+                        <div class="image">
+                            <img src="img/rice.jpg">
+                            </div>
+                        <p>Grains</p>
+                    </div>
+                    
+                    <!-- food4 -->
+                    <div class="rfood">
+                        <div class="image">
+                            <img src="img/fruits.png">
+                            </div>
+                        <p>Fruits</p>
+                    </div>
+                    
+                    <!-- food5 -->
+                    <div class="rfood">
+                        <div class="image">
+                            <img src="img/veggies.jpg">
+                            </div>
+                        <p>Veggies</p>
+                    </div>
+                    
+                    <!-- food6 -->
+                    <div class="rfood">
+                        <div class="image">
+                            <img src="img/rice.jpg">
+                            </div>
+                        <p>Frozen</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <div class="popular">
+                <div class="pop-top">
+                    <h1>Popular Categories <span></span></h1>
+                    <span>
+                        <a href="">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </span>
+                </div>
+                
+                <div class="pop-scroll">
+                    <span class="active">All</span>
+                    <span>Grains</span>
+                    <span>Fruits</span>
+                    <span>Veggies</span>
+                    <span>Frozen</span>
+                </div>
+                
+                <div class="pop-food">
+                    <div class="col-food">
+                        <!-- food1 -->
+                        <div class="cfood">
+                            <img src="img/protein.jpg">
+                            <div class="f-info">
+                                <h3>Grilled chicken</h3>
+                                <p>Protein</p>
+                                <p class="f-price"><i class="fa fa-naira-sign"></i>2,550</p>
+                            </div>
+                        </div>
+                        
+                        <!-- food2 -->
+                        <div class="cfood">
+                            <img src="img/rice.jpg">
+                            <h3>Sauced rice</h3>
+                        </div>
+                        
+                        <!-- food3 -->
+                        <div class="cfood">
+                            <img src="img/fplate.jpg">
+                            <h3>Grilled chicken</h3>
+                        </div>
+                        
+                        <!-- food4 -->
+                        <div class="cfood">
+                            <img src="img/veggies.jpg">
+                            <h3>Grilled chicken</h3>
+                        </div>
+                        
+                        <!-- food5 -->
+                        <div class="cfood">
+                            <img src="img/ske.jpg">
+                            <h3>Grilled chicken</h3>
+                        </div>
+                        
+                        <!-- food6 -->
+                        <div class="cfood">
+                            <img src="img/pf.jpg">
+                            <h3>Grilled chicken</h3>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
+
+
+
