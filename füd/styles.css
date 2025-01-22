@@ -45,7 +45,7 @@ body {
     border-radius: 10px;
 }
 .profile .greet{
-    margin-left: 5px;
+    margin-top: 5px;
 }
 .profile h1{
     font-size: 1.3em;
@@ -111,7 +111,7 @@ body {
     padding: 0 12px;
 }
 .home .info{
-    padding: 0 10px;
+    padding: 16px 12px 0 12px;
     position: relative;
 }
 .v-bg-wrap{
@@ -121,7 +121,7 @@ body {
 .v-bg {
   position: absolute;
   width: 95%;
-  height: 10em;
+  height: 11.5em;
   overflow: hidden;
   border-radius: 30px;
 }
@@ -132,6 +132,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.55);
 }
 /* .video-bg{
     position: absolute;
@@ -150,20 +151,36 @@ body {
 .home .greet{
     display: flex;
     align-items: center;  
+    padding: 3px 5px;
+    width: 80%;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
 }
 .home .greet h1{
     color: #fff;
     font-size: 1.7em;
     font-weight: 400;
 }
+.home .greet .name{
+    font-weight: 600;
+}
 .home .addinfo{
     line-height: 1.2;
     margin-top: 2px;
+    padding: 3px 5px;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
 }
 .home .addinfo h1{
     color: #fff;
     font-size: 2.1em;
-    font-weight: 500;
+    font-weight: 300;
+}
+.home .addinfo span{
+    color: #fff12b;
+    font-weight: 700;
 }
 .home .addinfo .del{
     color: #fff;
@@ -174,7 +191,7 @@ body {
     width: 80%;
     height: auto;
     position: absolute;
-    top: 58%;
+    top: 62%;
     left: 50%;
     translate: -50%;
     outline: 5px solid #f1f1f1;
@@ -291,19 +308,17 @@ body {
 .rfood p::after{
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 12px;
     border-radius: 50%;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    background: #ffb200;
+    border-bottom: 3px solid #ffb200;
     margin-top: 7px;
 }
 .popular{
     padding: 1.8em 12px;
-    /* margin-top: 1.8em; */
-    /* background: #f1f1f1; */
 }
 .popular .pop-top{
     display: flex;
