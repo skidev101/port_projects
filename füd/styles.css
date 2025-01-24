@@ -652,19 +652,25 @@ header h1{
     width: 100%;
     height: max-content;
     padding: 3px 5px;
+    color: #000;
     background: #fff;
     border-radius: 12px;
     /* background: url('img/bg/foodBg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; */
+    transition: .2s ease-out;
+}
+.rev-cards .r-card:hover{
+    color: #fff;
+    background: #ffb200;
 }
 .r-card .r-profile{
     width: 80%;
     height: max-content;
     display: flex;
     align-items: center;
-    padding: 5px 0;
+    padding: 5px 2px;
     margin-top: 5px;
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.4); */
     border-radius: 12px;
@@ -691,9 +697,78 @@ header h1{
 .r-card .rev{
     padding: 5px 3px;
 }
-
-
-
+.sub-form-wrap{
+    width: 100%;
+    height: 18em;
+    display: grid;
+    place-items: center;
+    padding-bottom: 2em;
+}
+.sub-form{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: url('img/bg/foodBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 12px;
+}
+.sub-form .subscribe{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 1.4em 0 0 0;
+}
+.sub-form .subscribe h1{
+    font-size: 1.4em;
+}
+.sub-form .subscribe form{
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe form .input{
+    width: 80%;
+    height: 3.5em;
+    background: #fff;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.subscribe form .input i{
+    padding: 0 7px;
+    font-size: 1.1em;
+}
+.subscribe form .input input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    border-radius: 50px;
+    padding: 0 5px;
+}
+.subscribe form button{
+    width: 40%;
+    height: 2.2em;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #fff;
+    background: #ffb200;
+    border-radius: 50px;
+    margin-top: 15px;
+}
 
 
 footer{
