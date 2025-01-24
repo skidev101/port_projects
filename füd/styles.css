@@ -416,6 +416,8 @@ body {
     border-top-right-radius: 18px;
 }
 .cfood .f-info{
+    display: flex;
+    flex-direction: column;
     padding: 4px 0 0 4px;
 }
 .f-info .f-price{
@@ -496,6 +498,82 @@ body {
     margin-top: 5px;
     text-transform: uppercase;
 }
+footer{
+    width: 100%;
+    height: max-content;
+    padding: 5px 12px;
+    color: #fff;
+    background: #000;
+}
+.f-content h2{
+    color: #ffb200;
+    font-size: 1.8em;
+    padding: 10px 0;
+}
+.f-info{
+    display: flex;
+    justify-content: space-between;
+}
+.f-info .f-loc h3{
+    font-size: 1.2em;
+}
+.f-loc p{
+    padding-top: 10px;
+}
+.f-loc p a{
+    font-size: 0.8em;
+    color: #ffb200;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.download h3{
+    font-size: 1.2em;
+}
+.download p{
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+    padding-top: 6px;
+}
+.download p img:nth-child(1){
+    width: 30px;
+    height: 30px;
+}
+.follow{
+    text-align: center;
+}
+.follow p{
+    font-size: 1.3em;
+    padding: 10px 0;
+}
+.follow .icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.3em;
+}
+.icons i{
+    font-size: 1.6em;
+    transition: .5s;
+}
+.icons i:hover{
+    color: #ffb200;
+}
+.f-content .line{
+    text-align: center;
+    width: 80%;
+    height: 1px;
+    margin: 5px 0 0 0;
+    background: #fff;
+    border-radius: 50px;
+}
+footer .copy{
+    color: #ffb200;
+    text-align: center;
+    padding: 14px 0 8px 0;
+    margin-top: 1em;
+    border-top: 1px solid #fff;
+}
+
 
 
 
