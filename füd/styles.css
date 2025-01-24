@@ -441,13 +441,49 @@ header h1{
     padding: 0 12px;
     margin-top: 1em;
 }
-.popular-loc h1{
+.popular-loc .loc-top h1{
     font-size: 1.5em;
+    position: relative;
+    padding: 5px 0;
 }
 .popular-loc .loc-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.loc-top h1::before{
+    content: '';
+    position: absolute;
+    width: 2.8em;
+    height: 5px;
+    border-radius: 50px;
+    left: 0;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+}
+.loc-top h1::after{
+    content: '';
+    position: absolute;
+    width: .9em;
+    height: 5px;
+    border-radius: 50px;
+    left: 15px;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+    margin-left: 2.3em;
+}
+.loc-top h1 span{
+    position: absolute;
+    width: 5.1px;
+    height: 5px;
+    border-radius: 50px;
+    left: 15px;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+    margin-left: 3.3em;
 }
 .popular-loc .loc-top span{
     color: #000;
@@ -513,6 +549,48 @@ header h1{
 .about{
     padding: 1em 12px;
 }
+.about h1{
+    position: relative;
+    padding: 5px 0;
+    font-size: 1.6em;
+}
+.about h1::before{
+    content: '';
+    position: absolute;
+    width: 2.5em;
+    height: 5px;
+    border-radius: 50px;
+    left: 0;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+}
+.about h1::after{
+    content: '';
+    position: absolute;
+    width: .8em;
+    height: 5px;
+    border-radius: 50px;
+    left: 15px;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+    margin-left: 2.3em;
+}
+.about h1 span{
+    position: absolute;
+    width: 5.1px;
+    height: 5px;
+    border-radius: 50px;
+    left: 15px;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+    margin-left: 3.3em;
+}
+.about .about-story{
+    margin-top: 10px;
+}
 .about p{
     color: #000;
     font-size: 1.1em;
@@ -523,6 +601,45 @@ header h1{
 }
 .reviews{
     padding: 0 12px 3em;
+}
+.reviews h1{
+    padding: 5px 0;
+    font-size: 1.6em;
+    position: relative;
+}
+.reviews h1::before{
+    content: '';
+    position: absolute;
+    width: 2.2em;
+    height: 5px;
+    border-radius: 50px;
+    left: 0;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+}
+.reviews h1::after{
+    content: '';
+    position: absolute;
+    width: .6em;
+    height: 5px;
+    border-radius: 50px;
+    left: 8px;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+    margin-left: 2.3em;
+}
+.reviews h1 span{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    left: 7px;
+    bottom: 0;
+    background: #ffb200;
+    margin-top: 7px;
+    margin-left: 3.3em;
 }
 .reviews .rev-cards{
     display: flex;
