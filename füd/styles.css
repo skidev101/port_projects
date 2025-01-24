@@ -736,7 +736,7 @@ header h1{
     flex-direction: column;
 }
 .subscribe form .input{
-    width: 80%;
+    width: 90%;
     height: 3.5em;
     background: #fff;
     border-radius: 50px;
