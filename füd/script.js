@@ -4,14 +4,18 @@ const sidebar = document.getElementById('sidebar');
 const body = document.querySelector('body');
 
 osidebar.addEventListener('click', () => {
-    sidebar.style.left = '0';
+    sidebar.style.right = '0';
 });
 
 csidebar.addEventListener('click', () => {
-    sidebar.style.left = '-13em';
+    sidebar.style.right = '-13em';
 })
 
-
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 0) {
+        sidebar.style.right = '-13em';
+    }
+})
 
 
 
