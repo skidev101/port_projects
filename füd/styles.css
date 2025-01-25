@@ -282,13 +282,7 @@ header h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: scroll;
-}
-.cat-food .row-food::-webkit-scrollbar{
-    height: 1px;
-    width: 6px;
-    border-radius: 50px;
-    background: red;
+    overflow: hidden;
 }
 .row-food .rfood{
     min-width: 4em;
@@ -378,7 +372,7 @@ header h1{
     align-items: center;
     padding: .8em 0 1em 0;
     border-radius: 50px;
-    overflow-x: scroll;
+    overflow: hidden;
 }
 .pop-scroll span{
     width: max-content;
