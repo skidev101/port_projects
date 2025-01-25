@@ -285,7 +285,7 @@ header h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 .cat-food .row-food::-webkit-scrollbar{
     height: 1px;
