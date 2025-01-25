@@ -287,6 +287,10 @@ header h1{
     align-items: center;
     overflow: hidden;
 }
+.cat-food .row-food::-webkit-scrollbar{
+    height: 1px;
+    background: #ffb200;
+}
 .row-food .rfood{
     min-width: 4em;
     height: 6.2em;
