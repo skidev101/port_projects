@@ -375,7 +375,7 @@ header h1{
     align-items: center;
     padding: .8em 0 1em 0;
     border-radius: 50px;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 .pop-scroll span{
     width: max-content;
