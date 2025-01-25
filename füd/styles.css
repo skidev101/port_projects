@@ -285,7 +285,7 @@ header h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: auto;
+    overflow: hidden;
 }
 .row-food .rfood{
     min-width: 4em;
