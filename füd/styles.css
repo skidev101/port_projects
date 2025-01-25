@@ -373,7 +373,6 @@ header h1{
 .pop-scroll{
     display: flex;
     align-items: center;
-    overflow: auto;
     padding: .8em 0 1em 0;
     border-radius: 50px;
     overflow-x: hidden;
