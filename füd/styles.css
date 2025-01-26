@@ -500,6 +500,11 @@ header h1{
     padding: 7px;
     border-radius: 12px;
     background: #fff;
+    transition: 0.3s ease-in-out;
+}
+.location-cards .loc:hover{
+    color: #fff;
+    background: #ffb200;
 }
 .loc .loc-info{
     margin-top: 8px;
@@ -509,6 +514,11 @@ header h1{
     height: 7em;
     object-fit: cover;
     border-radius: 12px;
+    transition: 0.2s ease-in-out;
+}
+.loc .loc-img img:hover{
+    transform: scale(1.015);
+    filter: brightness(1.1);
 }
 .loc .name-rate{
     width: 100%;
@@ -534,6 +544,10 @@ header h1{
     color: #ffb200;
     font-size: 0.7em;
     padding: 0 3px;
+    transition: 0.3s ease-out;
+}
+.name-rate .rate i:hover{
+    color: #fff;
 }
 .loc .time i{
     font-size: 0.7em;
@@ -846,8 +860,22 @@ footer .copy{
     margin-top: 1em;
     border-top: 1px solid #fff;
 }
-
-
+footer .copy p{
+    padding: 2px 0;
+    font-size: .9em;
+}
+footer .copy .tp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2em; 
+    padding: 4px 0;
+    font-size: 1em;
+}
+footer .copy .tp p{
+    text-decoration: underline;
+    padding: 2px 0;
+}
 
 
 
