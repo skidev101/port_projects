@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 body {
+    scroll-behavior: smooth;
     background: #f1f1f1;
 }
 .sidebar{
@@ -28,35 +29,12 @@ body {
 .closeI i{
     font-size: 1.7em;
 }
-.sidebar .profile{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 2em 0;
-    font-family: "Poppins";
-}
-.profile img{
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-}
-.profile .greet{
-    margin-top: 5px;
-}
-.profile h1{
-    font-size: 1.3em;
-    font-weight: 400;
-}
-.profile .name{
-    display: block;
-    font-weight: 600;
-    font-size: 1.7em;
-}
 .list{
     width: 100%;
     height: 100%;
+}
+.list .list-header{
+    padding: 1em 0 10px 5px;
 }
 .list ul li{
     list-style-type: none;
@@ -65,7 +43,7 @@ body {
     transition: 0.2s ease-out;
 }
 .list ul li:hover{
-    background: teal;
+    background: rgba(225, 225, 225, 0.8);
 }
 .list ul li a{
     width: 100%;
@@ -75,7 +53,7 @@ body {
     color: #000;
     margin-top: .7em;
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 12px;
     font-family: "Poppins";
 }
