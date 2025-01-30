@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.bodyDarkMode{
+    color: #fff;
+    background: #212121;
+    transition: background 0.2s ease-out;
+}
+header{
+    padding: 10px 8px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease-out;
+}
+.headerDarkMode{
+    background: #111111;
+    transition: background 0.2s ease-out;
+}
+header .modeToggle{
+    display: grid;
+    place-items: center;
+    color: #000;
+    background: #fff;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50px;
+    font-size: 1.2em;
+}
+.container{
+    padding: 1em 8px;
+}
+.inputf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+.inputf textarea{
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+    width: 85%;
+    height: 2.5em;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 9px 8px 0;
+    font-size: 1em;
+}
+.inputf button{
+    width: 2.2em;
+    height: 2.2em;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #fff;
+    background: linear-gradient(to right, blue, purple);
+    font-size: 1.1em;
+}
+.inputf button i{
+    font-size: 1.2em;
+    transition: 0.3s ease-out;
+}
+.inputf button i:hover{
+    transform: rotate(90deg);
+}
+.task-box{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #f1f1f1;
+    border-radius: 15px;
+    margin-top: 5em;
+    padding: .7em 5px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+.task-boxDarkMode{
+    background: #111111;
+    transition: background 0.2s ease-out;
+}
+.task-box .count{
+    position: absolute;
+    top: .8em;
+    right: 12px;
+    color: #000;
+    background: #fff;
+    width: 2em; 
+    height: 2em;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    margin: .8em 0;
+}
+.list .ctask{
+    width: 100%;
+    min-height: 2.5em;
+    height: max-content;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 12px 0 0;
+    transition: background 0.2s ease-out;
+}
+.list .ctask.ctaskDarkMode{
+    background: #212121;
+    border: 1px solid rgba(225, 225, 225, 0.2);
+    box-shadow: 0 0 5px rgba(225, 225, 225, 0.2);
+    transition: background 0.2s ease-out;
+}
+.ctask .task{
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 3px;
+}
+.ctask .task:focus{
+    outline: 1px solid #000;
+}
+.ctask i{
+    padding: 0 10px;
+}
+.ctask #completeIcon{
+    color: green;
+}
+.ctask #deleteIcon{
+    color: #e21c00e5;
+}
+.list div.complete{
+    opacity: .5;
+}
+
+
+
+
