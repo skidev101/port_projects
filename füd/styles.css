@@ -385,7 +385,7 @@ header h1{
 }
 .col-food .cfood{
     width: 145px;
-    height: 220px;
+    height: 230px;
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
@@ -414,6 +414,20 @@ header h1{
     display: flex;
     flex-direction: column;
     padding: 4px 0 0 4px;
+}
+.cfood .hash{
+    color: #8f9300;
+}
+.cfood .like-icon{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    background: #ffb200;
+    border-radius: 50px;
+}
+.cfood .like-icon i{
+    color: #fff;
+    padding: 8px;
 }
 .f-info .f-price{
     font-size: 1.1em;
