@@ -479,10 +479,12 @@ header h1{
 }
 .location-cards .loc{
     width: 100%;
-    height: auto;
+    height: max-content;
     padding: 7px;
+    margin-bottom: 10px;
     border-radius: 12px;
     background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     transition: 0.3s ease-in-out;
 }
 .location-cards .loc:hover{
@@ -542,6 +544,13 @@ header h1{
     font-weight: 700px;
     margin-top: 5px;
     text-transform: uppercase;
+}
+.view-more{
+    text-align: center;
+    font-size: 1.1em;
+}
+.view-more p a{
+    color: #ffb200;
 }
 .about{
     padding: 1em 12px;
@@ -652,6 +661,7 @@ header h1{
     color: #000;
     background: #fff;
     border-radius: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     transition: .2s ease-out;
 }
 .rev-cards .r-card:hover{
