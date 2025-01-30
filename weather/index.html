@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+    <title>weather.ski</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+   
+
+<body>
+       <div class="container">
+           <div class="top">
+               <figure>
+                   <img src="img/sun-cloud.png"></img>
+               </figure>
+               <h2 class="logo">skether</h2>
+           </div>
+           
+           <form action="">
+               <div class="sb" id="sb">
+                   <button>
+                   <i class="fi fi-bs-search"></i>
+               </button>
+               <input type="text" placeholder="Search city..." class="sb" id="search">
+           </div>
+          <p class="error">Enter a place</p>
+          <div class="loader" id="loader"></div>
+        </form>
+           
+           <div class="weather-info">
+               <div class="info">
+                 <div class="location">
+                   <h2 class="loc">
+                       Now in 
+    <span id="loc">---</span>
+    </h2> 
+                    <img src="" id="loc-img">
+                  </div>
+               
+               <div class="weather">
+                   <h2 class="temp" id="temp">
+                       0<sup>°c</sup>
+                   </h2>
+                   
+                   <figure>
+                       <img src="" id="wImg"></img> 
+                       <!-- <i class="fi fi-bs-cloud"></i> -->
+                   </figure>
+               </div>
+               
+               <div class="w-state">
+                   <h2 class="state" id="state">--</h2>
+               </div>
+               
+               <div class="add-info">
+                   <h2 class="date" id="date">- - -</h2>
+               </div>
+             </div>
+           </div>
+           
+           
+           <div class="cards">
+               <ul>
+                   <li>
+                       <span>Wind</span>
+                       <i class="fa fa-wind"></i>
+                       <span id="clouds">--</span>
+                   </li>
+                   
+                   <li>
+                       <span>Humidity</span>
+                       <i class="fa-solid fa-droplet"></i>
+                       <span id="humidity">--</span>
+                   </li>
+                   
+                   <li>
+                       <span>Pressure</span>
+                       <i class="fa-solid fa-gauge"></i>
+                       <span id="pressure">--</span>
+                   </li>
+               </ul>
+           </div>
+           
+           
+           <p class="ski">Made with 💣 by Ethan</p>
+           
+       </div>
+       
+       <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

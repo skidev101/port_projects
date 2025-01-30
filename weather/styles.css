@@ -1,0 +1,182 @@
+:root{
+    --text: #fff;
+    --bg: #000;
+    --bg2: #212121;
+    --gr: linear-gradient(to right, #212121, #fff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    background: var(--bg);
+}
+.container{
+    margin-top: .4em;
+    padding: 0 10px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.top figure img{
+    width: 50px;
+    height: 50px;
+}
+.top h2{
+    color: #4FACFE;
+    font-size: 2em;
+    font-family: "Fredoka", sans-serif;
+}
+.sb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5em;
+    background: var(--bg2);
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.sb button{
+    color: var(--text);
+    background: transparent;
+    outline: none;
+    border: none;
+    margin-left: 1em;
+    font-size: 1.1em;
+}
+.sb input{
+    margin-left: .4em;
+    padding-left: .5em;
+    color: var(--text);
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+}
+.error{
+    display: none;
+    color: red;
+    margin: 5px 0 0 2px;
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+.loader{
+    display: none; 
+    width: 1em;
+    height: 1em;
+    background: blue;
+    border-radius: 50px;
+    /* transform: translateX(-50%); */
+    animation: load 3s linear infinite;
+    position: absolute;
+    margin-top: 5px;
+    transition: ease-in-out;
+}
+@keyframes load {
+    0%{
+        transform: translateX(-100vw);
+    }
+    50%{
+        transform: translateX(95vw);
+        background: blue;
+    }
+    100%{
+        transform: translateX(-90vw);
+        background: purple;
+    }
+}
+.weather-info{
+    width: 100%;
+    color: var(--text);
+    background: var(--bg2);
+    border-radius: 20px;
+    margin: 1.8em 0;
+    box-sizing: border-box;
+    border: 1px solid rgba(225, 225, 225, 0.3);
+    box-shadow: 0 0 5px rgba(225, 225, 225, 0.3);
+}
+.info{
+    padding: 1em 10px;
+}
+.weather-info .location{
+    display: flex;
+    align-items: center;
+}
+.weather-info .location .loc{
+    padding-right: 5px;
+}
+.weather-info .location .img{
+    width: 15px;
+    height: 15px;
+}
+.weather-info .info .loc{
+    font-size: 1em;
+}
+.weather-info .info .loc span{
+    font-size: 1.3em;
+}
+.weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather h2{
+    font-size: 4.1em;
+}
+.weather figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    drop-shadow: 0 0 10px #fff;
+}
+.w-state{
+    border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+}
+.w-state h2{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.add-info{
+    margin-top: 1em;
+}
+.add-info h2{
+    font-size: 1em;
+    opacity: 0.7;
+}
+.cards{
+    text-align: center;
+}
+.cards ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.cards ul li{
+    background: var(--bg2);
+    border-radius: 10px;
+    padding: 20px 10px;
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: #fff;
+    border: 1px solid rgba(225, 225, 225, 0.3);
+    box-shadow: 0 0 5px rgba(225, 225, 225, 0.3);
+}
+.cards li i{
+    display: block!important;
+    margin: 20px 0;
+    font-size: 3.5em;
+}
+.ski{
+    color: blueviolet;
+    text-align: center;
+    margin: 1em 0;
+    padding-bottom: 1.5em;
+    font-family: "Fredoka";
+}
