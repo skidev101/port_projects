@@ -99,7 +99,13 @@ button:hover{
         transform: translateX(0px);
     }
 }
-
+.ski{
+    font-size: .9em;
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+}
 
 
 
