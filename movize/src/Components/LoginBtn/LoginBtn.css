@@ -1,0 +1,16 @@
+.l-btn{
+  padding: 1.2em 0;
+}
+.l-btn button{
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.1em;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5f41e4;
+  border-radius: 6px;
+}
+.l-btn button:active{
+  background: #4320df;
+}
