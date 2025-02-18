@@ -1,4 +1,4 @@
-const modeToggle = document.getElementById('modeToggle');
+let modeToggle = document.getElementById('modeToggle');
 const taskInput = document.getElementById('taskInput');
 const createTaskBtn = document.getElementById('createTask');
 const  count = document.getElementById('taskCount');
@@ -11,8 +11,6 @@ const taskBox =
 document.getElementById('task-box');
 
 let isMoonIcon = true;
-
-let date = newDate();
 
 let tasks = [];
 
