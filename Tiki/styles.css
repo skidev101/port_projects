@@ -210,9 +210,5 @@ header .modeToggle{
     width: 100%;
     margin-top: 1em;
     text-align: center;
-    position: fixed;
-    left: 50%;
-    bottom: 5px;
-    transform: translateX(-50%);
 }
 
