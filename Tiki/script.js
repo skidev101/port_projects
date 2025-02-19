@@ -51,6 +51,7 @@ function addToHTML() {
      newElement.innerHTML = `
        <div class="ctask ${isMoonIcon ? '' : 'ctaskDarkMode'}" id="ctask">
         <div class="task-date">
+            <i class="fa-regular fa-calendar"></i>
             <span id="t-date">${task.date}</span>
         </div>
         <div class="task-wrap">
