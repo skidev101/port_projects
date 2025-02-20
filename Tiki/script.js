@@ -34,7 +34,8 @@ const months = [
 if (localStorage.getItem('tasks') !== null) {
   tasks =   JSON.parse(localStorage.getItem('tasks'));
   taskCount = tasks.length;
-}
+  
+} 
 
 function saveToLocalStorage() {
     localStorage.setItem('tasks', JSON.stringify(tasks));

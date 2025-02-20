@@ -112,6 +112,15 @@ header .modeToggle{
     display: grid;
     place-items: center;
 }
+.edit-text{
+    opacity: 0.4;
+    display: none;
+}
+.empty{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
 .list{
     width: 100%;
     height: max-content;
@@ -160,7 +169,7 @@ header .modeToggle{
     .list{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        columns: 200px;
+        gap: 5px;
     }
     .list .ctask{
         min-height: 4em;
@@ -174,7 +183,7 @@ header .modeToggle{
     .list{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* columns: 200px; */
+        column-gap: 3px;
     }
 }
 .task-wrap{
@@ -211,6 +220,7 @@ header .modeToggle{
 }
 .list div.complete{
     opacity: .5;
+    text-decoration: line-through;
 }
 .f-text{
     width: 100%;
