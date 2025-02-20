@@ -1,21 +1,23 @@
 const osidebar = document.getElementById('osidebarIcon');
 const csidebar = document.getElementById('csidebarIcon');
 const sidebar = document.getElementById('sidebar');
-const body = document.querySelector('body');
+const links = document.querySelectorAll('.links li a p');
+
 
 osidebar.addEventListener('click', () => {
     sidebar.style.right = '0';
 });
 
 csidebar.addEventListener('click', () => {
-    sidebar.style.right = '-13em';
-})
+    sidebar.style.right = '-100%';
+});
 
-window.addEventListener('scroll', () => {
-    if(window.scrollY > 0) {
-        sidebar.style.right = '-13em';
-    }
-})
+links.addEventListener('click', () => {
+    sidebar.style.right = '-100%';
+});
+
+
+
 
 
 
