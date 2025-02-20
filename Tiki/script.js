@@ -9,6 +9,7 @@ const header =
 document.querySelector('header');
 const taskBox =
 document.getElementById('task-box');
+const editText = document.getElementById('edit-text');
 
 let isMoonIcon = true;
 
@@ -34,7 +35,6 @@ const months = [
 if (localStorage.getItem('tasks') !== null) {
   tasks =   JSON.parse(localStorage.getItem('tasks'));
   taskCount = tasks.length;
-  
 } 
 
 function saveToLocalStorage() {

@@ -53,6 +53,15 @@ header .modeToggle{
     font-size: 1em;
     transition: background 0.2s ease-out;
 }
+@media (min-width: 767px){
+    .inputf{
+        column-gap: 10px;
+        justify-content: center;
+    }
+    .inputf textarea{
+        width: 50%;
+    }
+}
 .textareaDarkMode{
     color: #fff;
     background: #111111;
@@ -65,14 +74,13 @@ header .modeToggle{
     border: none;
     outline: none;
     border-radius: 50px;
-    color: #fff;
     background: #3c2bff;
-    font-size: 1.1em;
+    font-size: 1.1em;    
     display: grid;
     place-items: center;
 }
 .inputf button:active{
-    background: #5c40ff;
+    background: #95a2ff;
 }
 .inputf button i{
     color: #fff;
@@ -113,8 +121,7 @@ header .modeToggle{
     place-items: center;
 }
 .edit-text{
-    opacity: 0.4;
-    display: none;
+    opacity: 0.3;
 }
 .empty{
     width: 80px;
