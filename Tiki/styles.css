@@ -66,7 +66,7 @@ header .modeToggle{
     outline: none;
     border-radius: 50px;
     color: #fff;
-    background: linear-gradient(to right, green, yellow);
+    background: linear-gradient(to right, #55ffff, #71ff6a);
     font-size: 1.1em;
 }
 .inputf button i{
