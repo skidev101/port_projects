@@ -395,7 +395,7 @@ header h1{
 }
 .col-food .cfood{
     width: 145px;
-    height: 240px;
+    min-height: 240px;
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
@@ -404,13 +404,13 @@ header h1{
 @media (min-width: 372px){
     .col-food .cfood{
         width: 175px;
-        height: 240px;
+        min-height: 240px;
     }
 }
 @media (min-width: 410px){
     .col-food .cfood{
         width: 190px;
-        height: 250px;
+        min-height: 250px;
     }
 }
 .cfood img{
@@ -442,7 +442,7 @@ header h1{
 .f-info .f-price{
     font-size: 1.1em;
     font-weight: 500;
-    padding: 8px 0;
+    padding: 8px 0 10px;
 }
 .popular-loc{
     padding: 0 12px;
