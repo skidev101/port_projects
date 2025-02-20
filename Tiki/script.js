@@ -29,7 +29,7 @@ const months = [
     'Oct',
     'Nov',
     'Dec'
-]
+];
 
 if (localStorage.getItem('tasks') !== null) {
   tasks =   JSON.parse(localStorage.getItem('tasks'));

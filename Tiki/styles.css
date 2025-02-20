@@ -66,11 +66,17 @@ header .modeToggle{
     outline: none;
     border-radius: 50px;
     color: #fff;
-    background: linear-gradient(to right, #55ffff, #71ff6a);
+    background: #3c2bff;
     font-size: 1.1em;
+    display: grid;
+    place-items: center;
+}
+.inputf button:active{
+    background: #5c40ff;
 }
 .inputf button i{
-    font-size: 1.2em;
+    color: #fff;
+    font-size: 1.4em;
     transition: 0.3s ease-out;
 }
 .inputf button i:hover{
