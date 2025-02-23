@@ -15,6 +15,25 @@ let load =
 document.getElementById('loader');
 let form = 
 document.querySelector('form');
+const months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'June',
+    'July',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec'
+];
+let today = new Date();
+let d = today.getDate();
+let m = today.getMonth();
+let y = today.getFullYear();
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -35,7 +54,7 @@ const searchWeather = () =>{
     fetch(url + '&q=' + searchValue.value)
     .then(response => response.json())
     .then(data => {
-        if (data.cod == 200) {
+        if (data.cod == 200) {         
             loc.innerHTML = data.name;
             state.innerText =  data.weather[0].description;
             img.src = 'http://openweathermap.org/img/wn/'+data.weather[0].icon+'@4x.png';
@@ -43,7 +62,7 @@ const searchWeather = () =>{
             clouds.innerText = data.wind.speed + "km/h";
             humidity.innerText = data.main.humidity + "%";
             pressure.innerText = data.main.pressure + "hpa";
-            
+            date.innerText = `${d} ${months[m]} ${y}`;
             
         } else if(data.cod == 404){
             error.innerText = 'Place not found';
