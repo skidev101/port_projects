@@ -1,10 +1,12 @@
-let qrText = document.getElementById('qrText');
-let qr = 
+const qrText = document.getElementById('qrText');
+const qr = 
 document.getElementById('qr');
-let qrImg = document.getElementById('qrImg');
+const qrImg = document.getElementById('qrImg');
+const btn = document.getElementById('btn');
+
 
 function generate() {
-        if (qrText.value.length > 0) {
+        if (qrText.value !== '') {
             qrImg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
         qr.classList.add('show');
         qrText.value = '';
@@ -16,17 +18,6 @@ function generate() {
         }
      
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
